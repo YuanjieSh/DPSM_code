@@ -3,7 +3,7 @@
 This repository contains a implementation of **DPSM**
 corresponding to the follow paper:
 
-Yuanjie Shi, Hooman Shahrokhi, Xuesong Jia, Xiongzhi Chen, Janardhan Rao Doppa, Yan Yan.
+Yuanjie Shi*, Hooman Shahrokhi*, Xuesong Jia, Xiongzhi Chen, Janardhan Rao Doppa, Yan Yan.
 *[Direct Prediction Set Minimization via Bilevel Conformal Classifier Training](
 https://openreview.net/forum?id=JL4MRb1bKH)*.
 ICML, 2025.
