@@ -1,3 +1,25 @@
+## Direct Prediction Set Minimization via Bilevel Conformal Classifier Training (DPSM)
+
+This repository contains a implementation of **DPSM**
+corresponding to the follow paper:
+
+Yuanjie Shi, Hooman Shahrokhi, Xuesong Jia, Xiongzhi Chen, Janardhan Rao Doppa, Yan Yan.
+*[Direct Prediction Set Minimization via Bilevel Conformal Classifier Training](
+https://openreview.net/forum?id=JL4MRb1bKH)*.
+ICML, 2025.
+
+## Overview
+
+Conformal prediction (CP) is a promising uncertainty quantification framework which works as a wrapper around a black-box classifier to construct prediction sets (i.e., subset of candidate classes) with provable guarantees. 
+However, standard calibration methods for CP tend to produce large prediction sets which makes them less useful in practice. 
+This paper considers the problem of integrating conformal principles into the training process of deep classifiers to directly minimize the size of prediction sets. 
+We formulate conformal training as a bilevel optimization problem and propose the {\em Direct Prediction Set Minimization (DPSM)} algorithm to solve it. 
+The key insight behind DPSM is to minimize a measure of the prediction set size (upper level) that is conditioned on the learned quantile of conformity scores (lower level). 
+We analyze that DPSM has a learning bound of $O(1/\sqrt{n})$ (with $n$ training samples),
+while prior conformal training methods based on stochastic approximation for the quantile has a bound of $\Omega(1/s)$ (with batch size $s$ and typically $s \ll \sqrt{n}$).
+Experiments on various benchmark datasets and deep models show that DPSM significantly outperforms the best prior conformal training baseline with $20.46\%\downarrow$ in the prediction set size and validates our theory.
+## Running instructions
+
 Please run the commands mentioned below to produce results:
 
 # CIFAR100
